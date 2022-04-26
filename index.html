@@ -16,93 +16,95 @@
 
     <!-- CORPO -->
     <body>
-        <header>
-            <figure>
-                <img src="./assets/img/bird 1.svg" alt="Logo do Ken-Te-Vi, um pássaro azul.">
-                <figcaption hidden>Logo Ken-Te-Vi</figcaption>
-            </figure>
+        <div class="container">
 
-            <nav>
-                <ul>
-                    <li>
-                        <img src="./assets/img/Home.png" alt="Home">
-                        <a href="">Página Inicial</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Hashtag.png" alt="Hashtag">
-                        <a href="">Explorar</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Notification.png" alt="Notificações">
-                        <a href="">Notificações</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Group.png" alt="Mensagens">
-                        <a href="">Mensagens</a></li>
-                    <li>
-                        <img src="./assets/img/Group (1).png" alt="Itens Salvos">
-                        <a href="">Itens Salvos</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Group (2).png" alt="Listas">
-                        <a href="">Listas</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/ProfilePic.png" alt="Perfil">
-                        <a href="">Perfil</a>
-                    </li>
-                    <li>
-                        <img src="./assets/img/Group (3).png" alt="Mais">
-                        <a href="">Mais</a>
-                    </li>    
-                </ul>
-            </nav>
-        </header>
+            <header class="cabecalho">
+                <figure class="cabecalho__logo">
+                    <img src="./assets/img/bird 1.svg" alt="Logo do Ken-Te-Vi, um pássaro azul.">
+                    <figcaption hidden>Logo Ken-Te-Vi</figcaption>
+                </figure>
 
-        <main>
-            <h3>Home</h3>
+                <nav class="cabecalho__menuNavegacao">
+                    <ul class="cabecalho__menuLista">
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Home.png" alt="Home">
+                            <a href="" class="active">Página Inicial</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Hashtag.png" alt="Hashtag">
+                            <a href="">Explorar</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Notification.png" alt="Notificações">
+                            <a href="">Notificações</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group.png" alt="Mensagens">
+                            <a href="">Mensagens</a></li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (1).png" alt="Itens Salvos">
+                            <a href="">Itens Salvos</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (2).png" alt="Listas">
+                            <a href="">Listas</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/ProfilePic.png" alt="Perfil">
+                            <a href="">Perfil</a>
+                        </li>
+                        <li class="cabecalho__menuItem">
+                            <img src="./assets/img/Group (3).png" alt="Mais">
+                            <a href="">Mais</a>
+                        </li>    
+                    </ul>
+                </nav>
+            </header>
 
-            <form action="#">
-                <textarea name="textotweet" id="" placeholder="O que está acontecendo?"></textarea>
+            <main class="main">
+                <h3 class="main__title">Home</h3>
 
-                <button type="submit">Tweetar</button>
-            </form>
+                <form action="#" class="main__form">
+                    <textarea name="textotweet" id="" placeholder="O que está acontecendo?"></textarea>
 
-            <section>
-                <ul class="">
-                    <li>
-                        <img src="./assets/img/ProfilePic.png" alt="Foto de Perfil">
-                        <div>
-                            <h2>Daniel</h2>
-                            <span>@danielkenzie 14s</span>
-                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./assets/img/ProfilePic (1).png" alt="">
-                        <div>
-                            <h2>Daniel</h2>
-                            <span>@danielkenzie 14s</span>
-                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="./assets/img/ProfilePic (2).png" alt="">
-                        <div>
-                            <h2>Daniel</h2>
-                            <span>@danielkenzie 14s</span>
-                            <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
-                        </div>
-                    </li>   
-                </ul>
-                
-            </section>
-        </main>
+                    <button type="submit">Tweetar</button>
+                </form>
 
-        <footer>
+                <section class="main__feed">
+                    <ul class="main_listTweets">
+                        <li class="main__tweet">
+                            <img class="tweet_profilePic" src="./assets/img/ProfilePic.png"  alt="Foto de Perfil">
 
-        </footer>
+                            <div class="tweet__content">
+                                <h2>Daniel</h2>
+                                <span>@danielkenzie 14s</span>
+                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                            </div>
+                        </li>
+
+                        <li class="main__tweet">
+                            <img class="tweet_profilePic" src="./assets/img/ProfilePic (1).png"  alt="Foto de Perfil">
+
+                            <div class="tweet__content">
+                                <h2>Daniel</h2>
+                                <span>@danielkenzie 14s</span>
+                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                            </div>
+                        </li>
+
+                        <li class="main__tweet">
+                            <img class="tweet_profilePic" src="./assets/img/ProfilePic (2).png"  alt="Foto de Perfil">
+
+                            <div class="tweet__content">
+                                <h2>Daniel</h2>
+                                <span>@danielkenzie 14s</span>
+                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                            </div>
+                        </li>   
+                    </ul>          
+                </section>
+            </main>
+        </div>
     </body>
-
 </html>
 

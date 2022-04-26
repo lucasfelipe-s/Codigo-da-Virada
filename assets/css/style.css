@@ -1,5 +1,103 @@
-
 /* BODY */
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cabecalho{
+    flex-basis: 30%;
+}
+.cabecalho__logo{
+    margin-bottom: 35px;
+}
+
+figcaption{
+    display: none;
+}
+
+.cabecalho__menuNavegacao{
+    font-size: 20px;
+}
+
+.cabecalho__menuLista{}
+
+.cabecalho__menuItem{
+    margin-bottom: 20px;
+}
+
+.cabecalho__menuItem img{}
+
+.cabecalho__menuItem a{
+    color: black;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+
+.active{
+    color:#1da1f2 !important; 
+    font-weight: bold;
+}
+
+.main{
+    flex-basis: 70%;
+    border-left: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+}
+.main__title{
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.main__form{
+    padding: 10px 20px;
+    /* border-top: 1px solid #e7ecf0; */
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.main__form textarea{
+    display: block;
+    width: 100%;
+    border: none;
+}
+
+.main__form button{
+    border: 1px solid #1da1f2;
+    background-color: #1da1f2;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.main__feed{
+}
+
+.main__listTweets{
+    
+}
+
+.main__tweet{
+    padding: 20px;
+    border-bottom: 1px solid #e7ecf0;
+}
+
+.tweet__profilePic{}
+
+.tweet__content{}
+
+.tweet__content h2{}
+
+.tweet__content span{}
+
+.tweet__content p{}
+
+
+
+
