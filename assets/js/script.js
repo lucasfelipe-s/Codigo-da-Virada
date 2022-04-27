@@ -85,7 +85,12 @@ function listarTemplateTweet(tweet){
 
     let div2  = document.createElement("div");
     div2.classList.add("tweet__icons")
-
+    
+    /* AJUDA DE UM COLEGA DA ROCKETSEAT, MAPEAMENTO DAS # EXISTENTES NO DOCUMENTO E TRANSFORMANDO ELAS EM LINK, VALEU DOUGLAS VAROLLO */
+    p.innerHTML = texto.replace(/\B(\#[a-zA-Z]+\b)(?!;)/gi, function (hashtag) {
+        return `<a href="#">${hashtag}</a>`;
+      });
+      
     let icon  = document.createElement("img");
     icon.classList.add('icon-reply');
     icon.classList.add('icons');
@@ -119,4 +124,13 @@ function listarTemplateTweet(tweet){
     formTextArea.value="";
 }
 
+/* AJUDA DE UM COLEGA DA ROCKETSEAT, MAPEAMENTO DAS # EXISTENTES NO DOCUMENTO E TRANSFORMANDO ELAS EM LINK, VALEU DOUGLAS VAROLLO */
+document.querySelectorAll('.tweet__text').forEach(function (tweet) {
+    tweet.innerHTML = tweet.textContent.replace(
+      /\B(\#[a-zA-Z]+\b)(?!;)/gi,
+      function (hashtag) {
+        return `<a href="#">${hashtag}</a>`
+      }
+    )
+  })
 

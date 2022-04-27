@@ -3,6 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -43,9 +44,8 @@ figcaption{
 }
 
 .cabecalho__menuItem a:hover{
-    transition: 0.3s;
-    background-color: #e8e8e8;
-    border-radius: 20px;  
+    transition: 0.5s;
+    background-color: #e8e8e8; 
 }
 
 .cabecalho__menuItem img{
@@ -54,6 +54,7 @@ figcaption{
 }
 
 .cabecalho__menuItem a{
+    border-radius: 20px; 
     color: black;
     text-decoration: none;
     vertical-align: top;
@@ -73,7 +74,7 @@ figcaption{
 .main__title{
     padding: 10px 20px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .main__form{
@@ -120,12 +121,40 @@ figcaption{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho__campanha{
+    width: 45px;
+    height: 45px;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.cabecalho__campanha:hover{
+    background-color: rgba(0,0,0,0.1);
 }
 
 .main__feed{
     border-top: 5px solid #e7ecf0;
+}
+
+.main__feed a{
+    color: #1D9BF0;
+    text-decoration: none;
+}
+
+.main__feed a:hover{
+    text-decoration: underline;
 }
 
 .main__listTweets{
