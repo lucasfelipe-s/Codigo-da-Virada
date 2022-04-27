@@ -2,10 +2,10 @@
 
 Projeto desenvolvido na parte 3 da maratona de programação da Kenzie Academy Brasil.
 Realizei mudanças de acordo com o que achei melhor, dentre elas:
-Mudei o estilo do menu lateral esquerdo;
-Estilizei a barra "Página Inicial" no centro do site;
-Melhorei um pouco do JS para fazer postagens mais eficientes;
-Adicionei imagens de reação (reply, like e retweet), com efeitos;
+- Mudei o estilo do menu lateral esquerdo;
+- Estilizei a barra "Página Inicial" no centro do site;
+- Melhorei um pouco do JS para fazer postagens mais eficientes;
+- Adicionei imagens de reação (reply, like e retweet), com efeitos;
 
 
 
