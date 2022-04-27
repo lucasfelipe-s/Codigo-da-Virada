@@ -2,13 +2,18 @@ const formButton = document.querySelector('.main__form button');
 const formTextArea = document.querySelector('#tweetContent');
 const feed = document.querySelector('.main__listTweets');
 
-
-
 function pegarTweet(event){
     event.preventDefault();
     const tweetTextArea = formTextArea.value;
-    criarTweet(tweetTextArea);
+
+    if(formTextArea.value !== ""){
+        criarTweet(tweetTextArea);
+    }else{
+        return false;
+    }
+    
 }
+
 formButton.addEventListener('click', pegarTweet);
 
 function criarTweet(tweetText){
@@ -28,7 +33,10 @@ function criarTweet(tweetText){
     listarTemplateTweet(tweet);
 }
 
+
 function listarTemplateTweet(tweet){
+
+
     const {nome,foto,nomeUsuario,texto,tempo} = tweet;
 
     let li   = document.createElement("li");
@@ -63,3 +71,4 @@ function listarTemplateTweet(tweet){
     feed.appendChild(li);
     formTextArea.value="";
 }
+
