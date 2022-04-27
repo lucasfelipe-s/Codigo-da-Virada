@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
+        <link rel="shortcut icon" href="./assets/img/bird 1.svg">
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Ken-Te-Vi</title>
     </head>
@@ -19,43 +20,46 @@
         <div class="container">
 
             <header class="cabecalho">
+                
                 <figure class="cabecalho__logo">
-                    <img src="./assets/img/bird 1.svg" alt="Logo do Ken-Te-Vi, um pássaro azul.">
-                    <figcaption hidden>Logo Ken-Te-Vi</figcaption>
+                    <a href="#home"><img src="./assets/img/bird 1.svg" alt="Logo do Ken-Te-Vi, um pássaro azul.">
+                    <figcaption hidden>Logo Ken-Te-Vi</figcaption></a>
                 </figure>
+                
+                
 
                 <nav class="cabecalho__menuNavegacao">
                     <ul class="cabecalho__menuLista">
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Home.png" alt="Home">
-                            <a href="" class="active">Página Inicial</a>
+                            <a href="" class="active"><img src="./assets/img/Home.png" alt="Home">
+                            Página Inicial</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Hashtag.png" alt="Hashtag">
-                            <a href="">Explorar</a>
+                            <a href=""><img src="./assets/img/Hashtag.png" alt="Hashtag">
+                            Explorar</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Notification.png" alt="Notificações">
-                            <a href="">Notificações</a>
+                            <a href=""><img src="./assets/img/Notification.png" alt="Notificações">
+                            Notificações</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Group.png" alt="Mensagens">
-                            <a href="">Mensagens</a></li>
+                            <a href=""><img src="./assets/img/Group.png" alt="Mensagens">
+                            Mensagens</a></li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Group (1).png" alt="Itens Salvos">
-                            <a href="">Itens Salvos</a>
+                            <a href=""><img src="./assets/img/Group (1).png" alt="Itens Salvos">
+                            Itens Salvos</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Group (2).png" alt="Listas">
-                            <a href="">Listas</a>
+                            <a href=""><img src="./assets/img/Group (2).png" alt="Listas">
+                            Listas</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/ProfilePic.png" alt="Perfil">
-                            <a href="">Perfil</a>
+                            <a href=""><img src="./assets/img/ProfilePic.png" alt="Perfil">
+                            Perfil</a>
                         </li>
                         <li class="cabecalho__menuItem">
-                            <img src="./assets/img/Group (3).png" alt="Mais">
-                            <a href="">Mais</a>
+                            <a href=""><img src="./assets/img/Group (3).png" alt="Mais">
+                            Mais</a>
                         </li>    
                     </ul>
                 </nav>
@@ -65,46 +69,51 @@
                 <h3 class="main__title">Home</h3>
 
                 <form action="#" class="main__form">
-                    <textarea name="textotweet" id="" placeholder="O que está acontecendo?"></textarea>
+                    <img class="form__profilePic" src="./assets/img/ProfilePic.png"  alt="Foto de Perfil">
+                    <textarea name="textotweet" id="tweetContent" placeholder="O que está acontecendo?"></textarea>
 
-                    <button type="submit">Tweetar</button>
+                    <button type="submit">Tweet</button>
                 </form>
 
                 <section class="main__feed">
-                    <ul class="main_listTweets">
+                    <ul class="main__listTweets">
                         <li class="main__tweet">
-                            <img class="tweet_profilePic" src="./assets/img/ProfilePic.png"  alt="Foto de Perfil">
+                            <img class="tweet__profilePic" src="./assets/img/ProfilePic.png"  alt="Foto de Perfil">
 
                             <div class="tweet__content">
-                                <h2>Daniel</h2>
-                                <span>@danielkenzie 14s</span>
-                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                                <h2 class="tweet__nome">Daniel</h2>
+                                <span class="tweet__usuarioTempo">&commat;danielkenzie &middot; 14s</span>
+                                <p class="tweet__text">MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
                             </div>
                         </li>
 
                         <li class="main__tweet">
-                            <img class="tweet_profilePic" src="./assets/img/ProfilePic (1).png"  alt="Foto de Perfil">
+                            <img class="tweet__profilePic" src="./assets/img/ProfilePic (1).png"  alt="Foto de Perfil">
 
                             <div class="tweet__content">
-                                <h2>Daniel</h2>
-                                <span>@danielkenzie 14s</span>
-                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                                <h2 class="tweet__nome">Maria</h2>
+                                <span class="tweet__usuarioTempo">&commat;mariakenzie &middot; 8m</span>
+                                <p class="tweet__text">MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
                             </div>
                         </li>
 
                         <li class="main__tweet">
-                            <img class="tweet_profilePic" src="./assets/img/ProfilePic (2).png"  alt="Foto de Perfil">
+                            <img class="tweet__profilePic" src="./assets/img/ProfilePic (2).png"  alt="Foto de Perfil">
 
                             <div class="tweet__content">
-                                <h2>Daniel</h2>
-                                <span>@danielkenzie 14s</span>
-                                <p>MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
+                                <h2 class="tweet__nome">Hudson</h2>
+                                <span class="tweet__usuarioTempo">&commat;hudsonkenzie &middot; 2h</span>
+                                <p class="tweet__text">MAIS DE 1 MILHÃO DE VAGAS! Artigo da McKinsey aponta que, até 2030, o Brasil terá um gargalo de 1 mi profissionais de tecnologia. É hora de se preparar... #VouSerDev #DoZeroAoCodigo</p>
                             </div>
                         </li>   
                     </ul>          
                 </section>
             </main>
+
         </div>
+
+        <script src="./assets/js/script.js"></script>
+
     </body>
 </html>
 

@@ -14,7 +14,7 @@ body{
     flex-basis: 30%;
 }
 .cabecalho__logo{
-    margin-bottom: 35px;
+    margin: 10px 0px 35px 10px;
 }
 
 figcaption{
@@ -27,11 +27,25 @@ figcaption{
 
 .cabecalho__menuLista{}
 
-.cabecalho__menuItem{
-    margin-bottom: 20px;
+.cabecalho__menuItem a{
+    padding: 10px;
 }
 
-.cabecalho__menuItem img{}
+.cabecalho__menuItem{
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.cabecalho__menuItem a:hover{
+    transition: 0.3s;
+    background-color: #e8e8e8;
+    border-radius: 20px;  
+}
+
+.cabecalho__menuItem img{
+    width: 25px;
+    height: 25px;
+}
 
 .cabecalho__menuItem a{
     color: black;
@@ -57,46 +71,79 @@ figcaption{
 
 .main__form{
     padding: 10px 20px;
-    /* border-top: 1px solid #e7ecf0; */
-    border-bottom: 1px solid #e7ecf0;
+    border-bottom: 10px solid #e7ecf0;
+    text-align: right;
+}
+
+.form__profilePic{
+    width: 50px;
+    height: 50px;
+    float: left;
 }
 
 .main__form textarea{
-    display: block;
-    width: 100%;
+    padding: 18px 10px 10px;
+    width: 90%; 
     border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .main__form button{
-    border: 1px solid #1da1f2;
-    background-color: #1da1f2;
-    padding: 10px 20px;
+    border: none;
+    background-color: rgba(29,161,242,0.4) ;
+    padding: 13px 20px;
     color: white;
     border-radius: 20px;
     font-weight: bold;
 }
 
+
 .main__feed{
 }
 
 .main__listTweets{
-    
+    display: flex;
+    flex-flow: column-reverse wrap;
 }
 
+.main__tweet:hover{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    transition: 0.4s;
+}
 .main__tweet{
     padding: 20px;
     border-bottom: 1px solid #e7ecf0;
+    display: flex;
+    align-items: flex-start;
 }
 
-.tweet__profilePic{}
+.tweet__profilePic{
+    width: 50px;
+    height: 50px;
+}
 
-.tweet__content{}
+.tweet__content{
+    margin-left: 15px;
+}
 
-.tweet__content h2{}
+.tweet__nome{
+    display: inline-block;
+    font-weight: bold;
+}
 
-.tweet__content span{}
+.tweet__usuarioTempo{
+    display: inline-block;
+    color: #828282;
+}
 
-.tweet__content p{}
+.tweet__text{
+    margin-top: 15px;
+    color: #333;
+}
 
 
 
