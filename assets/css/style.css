@@ -14,7 +14,7 @@ body{
     flex-basis: 30%;
 }
 .cabecalho__logo{
-    margin: 10px 0px 35px 10px;
+    margin: 0px 0px 35px 10px;
 }
 
 figcaption{
@@ -25,7 +25,12 @@ figcaption{
     font-size: 20px;
 }
 
-.cabecalho__menuLista{}
+.cabecalho__sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+}
 
 .cabecalho__menuItem a{
     padding: 10px;
@@ -34,6 +39,7 @@ figcaption{
 .cabecalho__menuItem{
     margin-bottom: 20px;
     border-radius: 20px;
+    font-weight: bold;
 }
 
 .cabecalho__menuItem a:hover{
@@ -67,11 +73,12 @@ figcaption{
 .main__title{
     padding: 10px 20px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .main__form{
     padding: 10px 20px;
-    border-bottom: 10px solid #e7ecf0;
+    border-bottom: 5px solid #e7ecf0;
     text-align: right;
 }
 
@@ -99,6 +106,7 @@ figcaption{
     color: white;
     border-radius: 20px;
     font-weight: bold;   
+    text-align: center;
 }
 
 
@@ -108,7 +116,16 @@ figcaption{
     cursor: pointer;
 }
 
+.main__cabecalho{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
 .main__feed{
+    border-top: 5px solid #e7ecf0;
 }
 
 .main__listTweets{
@@ -118,11 +135,11 @@ figcaption{
 
 .main__tweet:hover{
     cursor: pointer;
-    background-color: #e8e8e8;
+    background-color: #f3f3f3;
     transition: 0.4s;
 }
 .main__tweet{
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     border-bottom: 1px solid #e7ecf0;
     display: flex;
     align-items: flex-start;
@@ -133,24 +150,82 @@ figcaption{
     height: 50px;
 }
 
+.verificado{
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.verificado2{
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
 .tweet__content{
-    margin-left: 15px;
+    margin-left: 7px;
+    width: 100%;
 }
 
 .tweet__nome{
     display: inline-block;
     font-weight: bold;
+    padding-left: 8px;
 }
 
-.tweet__usuarioTempo{
+.tweet__nome:hover{
+    text-decoration: underline;
+}
+
+.tweet__time:hover{
+    text-decoration: underline;
+}
+
+.tweet__usuarioTempo,.tweet__time{
     display: inline-block;
     color: #828282;
 }
 
 .tweet__text{
-    margin-top: 15px;
+    margin-top: 10px;
+    padding-left: 8px;
     color: #333;
 }
+
+.tweet__icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    padding : 8px;
+    height: 34px;
+    width: 34px;
+    filter: brightness(0%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.icons:hover{
+    filter: brightness(100%);
+    transition: 0.5s;
+}
+
+.icon-reply:hover{
+    background-color: #1da0f225;
+}
+
+.icon-retweet:hover{
+    background-color: #00b97b25;
+}
+
+.icon-like:hover{
+    background-color: #e8265e25;
+}
+
+
+
 
 
 
