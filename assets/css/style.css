@@ -94,12 +94,19 @@ figcaption{
 .main__form button{
     border: none;
     background-color: rgba(29,161,242,0.4) ;
+    transition: 0.7s;
     padding: 13px 20px;
     color: white;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: bold;   
 }
 
+
+.toggleButton{
+    background-color: #1da1f2 !important;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 .main__feed{
 }

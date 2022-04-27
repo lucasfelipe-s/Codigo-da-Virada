@@ -14,7 +14,15 @@ function pegarTweet(event){
     
 }
 
-formButton.addEventListener('click', pegarTweet);
+function mudarCor(e){
+    e.preventDefault();
+    formButton.classList.toggle("toggleButton");
+}
+
+formTextArea.addEventListener('focus', mudarCor)
+formTextArea.addEventListener('focusout', mudarCor) 
+formButton.addEventListener('click', pegarTweet); 
+
 
 function criarTweet(tweetText){
     let data = new Date();
