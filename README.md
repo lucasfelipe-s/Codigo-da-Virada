@@ -1,11 +1,17 @@
 # Maratona de Programação 3: Twitter
 
 Projeto desenvolvido na parte 3 da maratona de programação da Kenzie Academy Brasil.
+Realizei mudanças de acordo com o que achei melhor, dentre elas:
+Mudei o estilo do menu lateral esquerdo;
+Estilizei a barra "Página Inicial" no centro do site;
+Melhorei um pouco do JS para fazer postagens mais eficientes;
+Adicionei imagens de reação (reply, like e retweet), com efeitos;
+
+
 
 ## Ferramentas
 
-1. [Instalação do VS Code no Windows](https://kenzie.com.br/blog/instalacao-vs-code-windows/)
-2. [Como utilizar o codepen e o VSCode](https://kenzie-academy-brasil.github.io/ferramentas/)
+Utilizei o VSCode e um pouco de Photoshop.
 
 ## O Projeto
 
