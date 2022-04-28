@@ -6,13 +6,14 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 2500px;
     margin: 0 auto;
     display: flex;
 }
 
 .cabecalho{
-    flex-basis: 30%;
+    flex-basis: 20%;
+    /* min-width: 20%; */
 }
 .cabecalho__logo{
     margin: 0px 0px 35px 10px;
@@ -31,12 +32,16 @@ figcaption{
     position: sticky;
     top: 0;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cabecalho__menuItem a{
     padding: 10px;
     border-radius: 20px; 
-    color: black;
+    color: #333;
+    font-weight: 500;
     text-decoration: none;
     vertical-align: top;
     margin-bottom: 20px;
@@ -61,16 +66,16 @@ figcaption{
 
 .active{
     color:#1da1f2 !important; 
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .main{
     flex-basis: 70%;
+    max-width: 1200px;
     border-left: 1px solid #e7ecf0;
     border-right: 1px solid #e7ecf0;
 }
 .main__title{
-    /* padding: 10px 20px; */
     margin: 10px 20px;
     padding: 10px 0;
     font-weight: bold;
@@ -81,6 +86,7 @@ figcaption{
     padding: 10px 20px;
     border-bottom: 5px solid #e7ecf0;
     text-align: right;
+    overflow-wrap:break-word;
 }
 
 .form__profilePic{
@@ -200,6 +206,7 @@ figcaption{
 .tweet__nome{
     display: inline-block;
     font-weight: bold;
+    color: #333;
     padding-left: 8px;
 }
 
@@ -220,6 +227,8 @@ figcaption{
     margin-top: 10px;
     padding-left: 8px;
     color: #333;
+    overflow-wrap:break-word;
+    max-width: 1100px;
 }
 
 .tweet__icons{
@@ -253,31 +262,51 @@ figcaption{
     background-color: #e8265e25;
 }
 
-.footer{
-
+.footer__sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
 }
 
 .footer__nav{
-
-}
-
-.footer__list{
-
+    margin-top: 56px;
 }
 
 .footer__items{
-
+    display: inline-block;
+    padding: 0 0 8px 16px;
 }
 
-.footer__paragraph{
+.footer__paragraph1,.footer__paragraph2{
+    color: #333;
+    padding: 10px 10px 0 16px;
+}
 
+.footer__paragraph2{
+    padding-top: 0;
 }
 
 .footer a{
-
+    text-decoration: none;
+    color: #333;
 }
 
-.footer__img{
-    width: 25px;
-    height: 25px;
+.footer a:hover:not(.link__img){
+    text-decoration: underline;
+}
+
+.footer__img{ 
+    width: 30px;
+    height: 30px;
+    margin: 10px 0px 0 16px;
+}
+
+.footer__img:hover{
+   filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.9));
+   transition: 0.5s;
+}
+
+@media screen {
+    
 }
