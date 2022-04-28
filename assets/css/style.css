@@ -35,12 +35,16 @@ figcaption{
 
 .cabecalho__menuItem a{
     padding: 10px;
+    border-radius: 20px; 
+    color: black;
+    text-decoration: none;
+    vertical-align: top;
+    margin-bottom: 20px;
 }
 
 .cabecalho__menuItem{
     margin-bottom: 20px;
     border-radius: 20px;
-    font-weight: bold;
 }
 
 .cabecalho__menuItem a:hover{
@@ -49,17 +53,11 @@ figcaption{
 }
 
 .cabecalho__menuItem img{
-    width: 25px;
+    width: 35px;
+    padding-right: 10px;
     height: 25px;
+    vertical-align: bottom;
 }
-
-.cabecalho__menuItem a{
-    border-radius: 20px; 
-    color: black;
-    text-decoration: none;
-    vertical-align: top;
-}
-
 
 .active{
     color:#1da1f2 !important; 
@@ -72,7 +70,9 @@ figcaption{
     border-right: 1px solid #e7ecf0;
 }
 .main__title{
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    margin: 10px 20px;
+    padding: 10px 0;
     font-weight: bold;
     font-size: 25px;
 }
@@ -252,10 +252,3 @@ figcaption{
 .icon-like:hover{
     background-color: #e8265e25;
 }
-
-
-
-
-
-
-
