@@ -40,9 +40,10 @@ Utilizei o VSCode e um pouco de Photoshop.
 - Preto: #000000;
 - Branco: #ffffff;
 
-## Layout
+## Layout e Projeto Final
 
-- [Twitter](./assets/img/twitter.png)
+- [Layout Twitter](./assets/img/twitter.png)
+- <a href='https://lucasfelipe-s.github.io/Codigo-da-Virada/'>Projeto Final</a>
 
 ## Referências
 - [w3schools lista de tags](https://www.w3schools.com/tags/default.asp)
